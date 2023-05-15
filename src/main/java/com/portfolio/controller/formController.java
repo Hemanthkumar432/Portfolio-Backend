@@ -15,7 +15,8 @@ import com.portfolio.service.FormService;
 
 
 @RestController
-@CrossOrigin(origins = "https://upset-frog-production.up.railway.app/")
+@RequestMapping("/")
+@CrossOrigin(origins = "https://upset-frog-production.up.railway.app")
 public class formController {
 	
     @Autowired
