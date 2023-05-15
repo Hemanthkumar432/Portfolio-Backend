@@ -15,13 +15,13 @@ import com.portfolio.service.FormService;
 
 
 @RestController
-@CrossOrigin(origins = "https://upset-frog-production.up.railway.app")
+@CrossOrigin(origins = "https://upset-frog-production.up.railway.app/")
 public class formController {
 	
     @Autowired
     private FormService service;
     
-	 @PostMapping("/form")
+	 @PostMapping("form")
 	    public Form saveUser(@RequestBody Form form)
 	 {
 		 return service.save(form);
